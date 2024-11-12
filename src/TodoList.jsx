@@ -22,7 +22,7 @@ function TodoList() {
         <ul> 
             {todoList.map( function(item) {
                 return (
-                    <li key={item.id}> git 
+                    <li key={item.id}> 
                     {item.title} 
                     </li>
                 );  

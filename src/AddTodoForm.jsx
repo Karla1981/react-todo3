@@ -7,7 +7,7 @@ function AddTodoForm() {
         <form>
             <label text="title" htmlFor="todoTitle">Title: </label>
             <input id="todoTitle" />
-            <spam> <button text="add">Add</button> </spam>
+            <button text="add">Add</button>
         </form>
     )
 }
