@@ -3,6 +3,12 @@
 //create a function called AddTodoForm
 function AddTodoForm() {
 
+    // Step: handleAddTodo form submit
+    function handleAddTodo(){
+
+    }
+
+   //
     return (
         <form>
             <label text="title" htmlFor="todoTitle">Title: </label>
