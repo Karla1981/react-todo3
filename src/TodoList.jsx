@@ -7,11 +7,12 @@ const todoList = [
     { id: 3, title: "Make dinner" },
 ];
 
-function TodoList() {
+function TodoList() {//todoList.map()...
     return (
         <ul>
-            {todoList.map((todo) => (
-              <TodoListItem key={todo.id} id={todo.id} title={todo.title} />
+            {todoList.map((todo) => (//todoList={setTodoList} Pass todoList state 
+            // as a prop named todoList to the TodoList component
+              <TodoListItem key={todo.id} id={todo.id} title={todo.title}/>
             ))}
         </ul>
     );
