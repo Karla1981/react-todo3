@@ -1,35 +1,20 @@
-//import?
+import React from "react";
+import TodoListItem from "./TodoListItem";
 
-// Array
 const todoList = [
-    { 
-      id: 1,
-      title: 'Homework' 
-    },
-    { 
-      id: 2,
-      title: 'Buy groceries' 
-    },
-    { id: 3,
-      title: 'Make dinner'
-    },
-  ];
+    { id: 1, title: "Homework" },
+    { id: 2, title: "Buy groceries" },
+    { id: 3, title: "Make dinner" },
+];
 
-//create a function called TodoList
-function TodoList() {
-
+function TodoList() {//todoList.map()...
     return (
-        <ul> 
-            {todoList.map( function(item) {
-                return (
-                    <li key={item.id}> 
-                    {item.title} 
-                    </li>
-                );  
-            })}
+        <ul>
+            {todoList.map((todo) => (//todoList={setTodoList} Pass todoList state 
+            // as a prop named todoList to the TodoList component
+              <TodoListItem key={todo.id} id={todo.id} title={todo.title}/>
+            ))}
         </ul>
     );
 }
-
-//export TodoList as default module
 export default TodoList;
